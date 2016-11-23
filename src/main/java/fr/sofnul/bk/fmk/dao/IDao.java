@@ -3,7 +3,7 @@ package fr.sofnul.bk.fmk.dao;
 import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.NoRepositoryBean;
 
 import fr.sofnul.bk.fmk.bo.IObjectBaseBO;
 
@@ -12,8 +12,7 @@ import fr.sofnul.bk.fmk.bo.IObjectBaseBO;
  * @param <T>
  * @param <K>
  */
-@Repository
-public interface IDao<T extends IObjectBaseBO<? extends Serializable>, K extends Serializable>
-		extends JpaRepository<T, K> {
+@NoRepositoryBean
+public interface IDao<T extends IObjectBaseBO<? extends Serializable>, K extends Serializable> extends JpaRepository<T, K> {
 
 }

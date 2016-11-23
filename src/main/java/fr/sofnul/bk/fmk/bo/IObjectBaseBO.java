@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 /**
  * @author Boubker ABERWAG
- * @param <ID>
+ * @param <Id>
  */
-public class IObjectBaseBO<ID extends Serializable> implements Serializable {
+public class IObjectBaseBO<Id extends Serializable> implements Serializable {
 
 	/**
 	 * generated serialVersionUID
